@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                  Text(
                      text = "HP",
                      modifier = Modifier.align(alignment= Alignment.CenterStart)
-                         .fillMaxWidth(fraction = 0.5f)
+                         .fillMaxWidth(fraction = 0.23f)
                          .background(color=Color.Red)
                          .padding(8.dp)
 
