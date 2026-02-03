@@ -1,5 +1,6 @@
 package com.example.a523lablearnandroid
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -68,6 +69,9 @@ class MainActivity : ComponentActivity() {
                         .size(300.dp)
                         .align(Alignment.CenterHorizontally)
                         .padding(top= 16.dp)
+                        .clickable() {
+                            startActivity(Intent(this@MainActivity, ListAcrivity::class.java))
+                        }
 
 
                 )
@@ -114,7 +118,7 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     Column() {
-                        Button(onClick = {int = int+1 }) {
+                        Button(onClick = {int = int+10 }) {
                             Text(text = "+", fontSize = 32.sp)
                         }
 
@@ -125,7 +129,12 @@ class MainActivity : ComponentActivity() {
                             Text(text = "-", fontSize = 32.sp)
                         }
                     }
+
                 }
+
+
+
+
 
 
 
