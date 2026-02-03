@@ -53,7 +53,8 @@ fun ListScreen() {
                 LazyColumn() {
                     items(allKantoPokemon.size) {index ->
                         val item = allKantoPokemon[index]
-                        Text(text = item.name, modifier = Modifier.padding(16.dp), fontSize = 36.sp)
+                        val num = index+1
+                        Text(text = "#"+num+" "+item.name, modifier = Modifier.padding(16.dp), fontSize = 36.sp)
                     }
                 }
             }
