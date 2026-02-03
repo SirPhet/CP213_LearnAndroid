@@ -128,8 +128,19 @@ class MainActivity : ComponentActivity() {
                 }
 
 
+
+
+
+
             }
             }
         }
     }
 
+//@Preview
+//@Composable
+//fun GreetingPreview() {
+//    _523LabLearnAndroidTheme {
+//        Greeting("Android")
+//    }
+//}
