@@ -35,6 +35,7 @@ fun ListScreen() {
     Column(modifier = Modifier.background(Color.Red)
         .padding(40.dp)
         .padding(top=60.dp)
+        .padding(bottom=30.dp)
         .fillMaxSize()
 
     ) {
