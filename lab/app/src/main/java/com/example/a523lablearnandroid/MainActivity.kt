@@ -83,6 +83,8 @@ class MainActivity : ComponentActivity() {
                 )
                 {
                     var str:Int by remember { mutableStateOf(10) }
+                    var agi:Int by remember { mutableStateOf(10) }
+                    var int:Int by remember { mutableStateOf(10) }
                     Column() {
                         Button(onClick = {str = str+1 }) {
                             Text(text = "+", fontSize = 32.sp)
@@ -90,19 +92,38 @@ class MainActivity : ComponentActivity() {
 
                         Text(text = "Str", fontSize = 32.sp)
                         Text(text = str.toString(), fontSize = 32.sp)
-                        Text(text ="-",fontSize=32.sp,
-                            modifier = Modifier.clickable {
-                                str = str-1
-                            })
+//                        Text(text ="-",fontSize=32.sp,
+//                            modifier = Modifier.clickable {
+//                                str = str-1
+//                            })
+                        Button(onClick = {str = str-1 }) {
+                            Text(text = "-", fontSize = 32.sp)
+                        }
 
                     }
                     Column() {
+                        Button(onClick = {agi = agi+1 }) {
+                            Text(text = "+", fontSize = 32.sp)
+                        }
+
                         Text(text = "Agi", fontSize = 32.sp)
-                        Text(text = "8", fontSize = 32.sp)
+                        Text(text = agi.toString(), fontSize = 32.sp)
+
+                        Button(onClick = {agi = agi-1 }) {
+                            Text(text = "-", fontSize = 32.sp)
+                        }
                     }
                     Column() {
+                        Button(onClick = {int = int+1 }) {
+                            Text(text = "+", fontSize = 32.sp)
+                        }
+
                         Text(text = "Int", fontSize = 32.sp)
-                        Text(text = "8", fontSize = 32.sp)
+                        Text(text = int.toString(), fontSize = 32.sp)
+
+                        Button(onClick = {int = int-1 }) {
+                            Text(text = "-", fontSize = 32.sp)
+                        }
                     }
                 }
 
