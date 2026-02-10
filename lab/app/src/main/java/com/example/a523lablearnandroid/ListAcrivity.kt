@@ -1,6 +1,7 @@
 package com.example.a523lablearnandroid
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,6 +28,36 @@ class ListAcrivity : ComponentActivity() {
         setContent {
             ListScreen()
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("Lifecycle", "MainActivity : onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("Lifecycle", "MainActivity : onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("Lifecycle", "MainActivity : onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("Lifecycle", "MainActivity : onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("Lifecycle", "MainActivity : onDestroy")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("Lifecycle", "MainActivity : onRestart")
     }
 }
 

@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._523LabLearnAndroid">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
             android:name=".ListAcrivity"
             android:exported="false"
             android:label="@string/title_activity_list_acrivity"
