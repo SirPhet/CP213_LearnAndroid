@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,47 +13,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme._523LabLearnAndroid">
+
+        <!-- 1. หน้าแสดง Pokedex (ลบตัวที่ซ้ำออกและใส่ . นำหน้า) -->
+        <activity
+            android:name=".PokedexActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pokedex"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+
+        <activity
+            android:name=".SharePerferencesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_share_perferences"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+
+        <!-- 2. หน้าแรกของแอป (MenuActivity) -->
         <activity
             android:name=".MenuActivity"
+            android:exported="true"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme._523LabLearnAndroid"
-            android:exported="true" >
+            android:theme="@style/Theme._523LabLearnAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ListAcrivity"
-            android:exported="false"
-            android:label="@string/title_activity_list_acrivity"
-            android:theme="@style/Theme._523LabLearnAndroid" />
+
+        <!-- 3. หน้าอื่นๆ (เปลี่ยน exported เป็น false ถ้าไม่ได้เรียกจากนอกแอป) -->
         <activity
             android:name=".MainActivity2"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Theme._523LabLearnAndroid">
+            android:theme="@style/Theme._523LabLearnAndroid" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme._523LabLearnAndroid">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-
+            android:theme="@style/Theme._523LabLearnAndroid" />
 
     </application>
 

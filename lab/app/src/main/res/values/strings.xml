@@ -3,4 +3,7 @@
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_activity_list_acrivity">ListAcrivity</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_share_perferences">SharePerferencesActivity</string>
+    <string name="title_activity_pokemon">PokemonActivity</string>
+    <string name="title_activity_pokedex">PokedexActivity</string>
 </resources>

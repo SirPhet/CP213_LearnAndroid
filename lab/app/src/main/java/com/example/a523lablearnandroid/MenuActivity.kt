@@ -34,9 +34,14 @@ class MenuActivity : ComponentActivity() {
                     Text(text = "RPGCardActivity")
                 }
                 Button(onClick = {
-                    startActivity(Intent(this@MenuActivity, ListAcrivity::class.java))
+                    startActivity(Intent(this@MenuActivity, PokedexActivity::class.java))
                 }) {
                     Text(text = "RPGCardActivity")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, SharePerferencesActivity::class.java))
+                }) {
+                    Text(text = "SharePerferencesActivity")
                 }
             }
         }

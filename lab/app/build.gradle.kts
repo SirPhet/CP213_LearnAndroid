@@ -6,14 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.a523lablearnandroid"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36// แนะนำให้ใช้ SDK 34 หรือ 35 (36 ยังเป็นตัวทดสอบ/ใหม่มากอาจมีปัญหา)
 
     defaultConfig {
         applicationId = "com.example.a523lablearnandroid"
         minSdk = 30
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -42,20 +40,21 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.compose.ui)
-    implementation(libs.androidx.compose.ui.graphics)
-    implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.compose.foundation)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    debugImplementation(libs.androidx.compose.ui.tooling)
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
+    // --- ส่วนที่เพิ่มเข้ามาเพื่อให้หาย Error 'setContent' ---
+    implementation("androidx.activity:activity-compose:1.9.3")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    // --------------------------------------------------
+
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
+    // Retrofit สำหรับคุยกับ Server
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Lifecycle & ViewModel สำหรับ Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.material3)
 }
