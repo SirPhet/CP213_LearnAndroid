@@ -137,7 +137,7 @@
 //    Pokemon("Nidoking", 34),
 //    Pokemon("Clefairy", 35),
 //)
-//
+//checkin
 //// Tips: for image : https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/1.png
 //@Preview(showBackground = true)
 //@Composable
