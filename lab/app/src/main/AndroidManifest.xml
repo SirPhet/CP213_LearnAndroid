@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +21,18 @@
             android:name=".PokedexActivity"
             android:exported="false"
             android:label="@string/title_activity_pokedex"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+
+        <activity
+            android:name=".SensorActivity"
+            android:exported="false"
+            android:label="Sensor Activity"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+
+        <activity
+            android:name=".GalleryActivity"
+            android:exported="false"
+            android:label="Gallery Activity"
             android:theme="@style/Theme._523LabLearnAndroid" />
 
         <activity

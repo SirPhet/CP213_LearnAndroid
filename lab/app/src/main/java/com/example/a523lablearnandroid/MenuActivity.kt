@@ -43,6 +43,16 @@ class MenuActivity : ComponentActivity() {
                 }) {
                     Text(text = "SharePerferencesActivity")
                 }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, GalleryActivity::class.java))
+                }) {
+                    Text(text = "GalleryActivity (Image Picker)")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, SensorActivity::class.java))
+                }) {
+                    Text(text = "Sensor Activity (Task 2 & 3)")
+                }
             }
         }
     }
