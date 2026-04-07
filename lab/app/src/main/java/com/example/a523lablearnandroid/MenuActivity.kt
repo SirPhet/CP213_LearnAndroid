@@ -100,6 +100,26 @@ class MenuActivity : ComponentActivity() {
                 }) {
                     Text(text = "Part 8 Responsive Design")
                 }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part9Activity::class.java))
+                }) {
+                    Text(text = "Part 9 Collapsing Toolbar")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part10Activity::class.java))
+                }) {
+                    Text(text = "Part 10 App Widget")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part11Activity::class.java))
+                }) {
+                    Text(text = "Part 11 Skeleton Loading")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part12Activity::class.java))
+                }) {
+                    Text(text = "Part 12 Bottom Sheet & Dialog")
+                }
             }
         }
     }
