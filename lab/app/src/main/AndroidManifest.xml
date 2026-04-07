@@ -74,6 +74,36 @@
             android:exported="false"
             android:label="Part 3 Donut Chart"
             android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part4Activity"
+            android:exported="false"
+            android:label="Part 4 Swipe Dismiss"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part5Activity"
+            android:exported="false"
+            android:label="Part 5 Side Effects"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part6Activity"
+            android:exported="false"
+            android:label="Part 6 In-App WebView"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part7Activity"
+            android:exported="false"
+            android:label="Part 7 Transitions"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part7DetailActivity"
+            android:exported="false"
+            android:label="Part 7 Detail"
+            android:theme="@style/Theme._523LabLearnAndroid" />
+        <activity
+            android:name=".Part8Activity"
+            android:exported="false"
+            android:label="Part 8 Responsive Profile"
+            android:theme="@style/Theme._523LabLearnAndroid" />
     </application>
 
 </manifest>

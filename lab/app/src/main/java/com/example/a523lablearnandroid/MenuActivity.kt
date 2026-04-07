@@ -75,6 +75,31 @@ class MenuActivity : ComponentActivity() {
                 }) {
                     Text(text = "Part 3 Donut Chart")
                 }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part4Activity::class.java))
+                }) {
+                    Text(text = "Part 4 Swipe Dismiss")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part5Activity::class.java))
+                }) {
+                    Text(text = "Part 5 Side Effects (Snackbar/Launch)")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part6Activity::class.java))
+                }) {
+                    Text(text = "Part 6 In-App WebView")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part7Activity::class.java))
+                }) {
+                    Text(text = "Part 7 Activity Transition")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part8Activity::class.java))
+                }) {
+                    Text(text = "Part 8 Responsive Design")
+                }
             }
         }
     }
