@@ -8,6 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -22,7 +24,12 @@ class MenuActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp)
+                    .verticalScroll(rememberScrollState())
+            ) {
                 Button(onClick = {
                     startActivity(Intent(this@MenuActivity, MainActivity::class.java))
                 }) {
@@ -52,6 +59,21 @@ class MenuActivity : ComponentActivity() {
                     startActivity(Intent(this@MenuActivity, SensorActivity::class.java))
                 }) {
                     Text(text = "Sensor Activity (Task 2 & 3)")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part1AnimationActivity::class.java))
+                }) {
+                    Text(text = "Part 1 Animation Activity")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part2Activity::class.java))
+                }) {
+                    Text(text = "Part 2 Contact List")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, Part3Activity::class.java))
+                }) {
+                    Text(text = "Part 3 Donut Chart")
                 }
             }
         }

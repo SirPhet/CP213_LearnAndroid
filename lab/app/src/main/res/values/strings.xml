@@ -6,4 +6,5 @@
     <string name="title_activity_share_perferences">SharePerferencesActivity</string>
     <string name="title_activity_pokemon">PokemonActivity</string>
     <string name="title_activity_pokedex">PokedexActivity</string>
+    <string name="title_activity_part1_animation">Part1AnimationActivity</string>
 </resources>
